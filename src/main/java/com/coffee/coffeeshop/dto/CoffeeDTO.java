@@ -10,6 +10,7 @@ import lombok.Setter;
 public class CoffeeDTO {
     String color;
     String price;
+    String type;
     CoffeeMetadataDTO coffeeMetaData;
 
 }

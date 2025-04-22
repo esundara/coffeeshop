@@ -23,13 +23,6 @@ public class CoffeeController {
 	@GetMapping("/v1/getCoffee")
 	public ResponseEntity<CoffeeDTO> getCoffee() {
 		CoffeeDTO cDTO = service.getCoffee();
-		cDTO.setColor("BLACK");
-		cDTO.setPrice("5.99");
-		CoffeeMetadataDTO coffeeMetadata = new CoffeeMetadataDTO();
-		coffeeMetadata.setCity("Ashburn");
-		coffeeMetadata.setShop("Claiborne");
-		cDTO.setCoffeeMetaData(coffeeMetadata);
-
 		return ResponseEntity.ok(cDTO);
 
 	}
